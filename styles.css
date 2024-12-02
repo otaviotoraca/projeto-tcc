@@ -1,0 +1,400 @@
+/* Estilo para o select da armadilha */
+.trap-select {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    padding: 0.75rem; /* Preenchimento interno */
+    margin: 0.5rem 0; /* Margem superior e inferior */
+    border: 1px solid #bdc3c7; /* Borda cinza */
+    border-radius: 4px; /* Cantos arredondados */
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    background-color: #ffffff; /* Cor de fundo */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+/* Estilo para o select da armadilha quando em foco */
+.trap-select:focus {
+    border-color: #3498db; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Sombra ao redor */
+}
+
+/* Estilo para o select da fazenda */
+.farm-select {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    padding: 0.75rem; /* Preenchimento interno */
+    margin: 0.5rem 0; /* Margem superior e inferior */
+    border: 1px solid #bdc3c7; /* Borda cinza */
+    border-radius: 4px; /* Cantos arredondados */
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    background-color: #ffffff; /* Cor de fundo */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+/* Estilo para o select da fazenda quando em foco */
+.farm-select:focus {
+    border-color: #3498db; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Sombra ao redor */
+}
+
+/* Estilos para a imagem capturada */
+#capturedImage {
+    width: 100%; /* Ocupa toda a largura disponível do contêiner */
+    max-width: 400px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    border-radius: 4px; /* Adiciona cantos arredondados, se desejado */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 100%; /* Ajuste para ocupar toda a largura em dispositivos pequenos */
+    margin: 1rem auto; /* Menor margem para dispositivos pequenos */
+    background-color: #ffffff;
+    padding: 1.5rem; /* Menor padding para dispositivos pequenos */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para a página da câmera */
+#video {
+    width: 100%; /* Ocupa toda a largura disponível do container */
+    max-width: 400px; /* Limita a largura máxima do vídeo */
+    height: auto; /* Mantém a proporção */
+    background-color: #000; /* Cor de fundo enquanto a câmera não estiver ativa */
+    margin: 0 auto 1rem; /* Centraliza o vídeo e adiciona margem abaixo */
+}
+
+/* Estilos para títulos */
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem; /* Ajuste para melhor espaçamento */
+    text-align: center;
+}
+
+/* Estilos para formulários */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Estilos para botões */
+.button, button {
+    display: inline-block;
+    width: 100%; /* Botões ocupam toda a largura */
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.button:hover, button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos específicos para a página de armadilha */
+.form-section {
+    background-color: #ecf0f1;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.trap-block {
+    display: flex;
+    flex-direction: column; /* Alteração para coluna em telas pequenas */
+    align-items: flex-start; /* Alinhamento à esquerda */
+    margin-bottom: 0.75rem;
+}
+
+.trap-block input {
+    width: calc(100% - 30px); /* Ajuste de largura para permitir espaço para o botão de remover */
+    margin-bottom: 0.5rem; /* Ajuste de margem */
+}
+
+.remove-trap {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px; /* Aumento de largura para facilitar o toque */
+    height: 30px; /* Aumento de altura para facilitar o toque */
+    font-size: 1rem; /* Ajuste de tamanho de fonte */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.remove-trap:hover {
+    background-color: #c0392b;
+}
+
+#addTrap {
+    background-color: #2ecc71;
+}
+
+#addTrap:hover {
+    background-color: #27ae60;
+}
+
+#saveButton {
+    background-color: #e67e22;
+}
+
+#saveButton:hover {
+    background-color: #d35400;
+}
+
+/* Estilos específicos para a página da câmera */
+#cameraFeed {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 100%; /* Removido max-width para evitar cortes */
+    height: auto; /* Altura automática para manter a proporção */
+    background-color: #000;
+    margin: 0 auto 1rem;
+}
+
+#captureButton {
+    background-color: #e74c3c;
+}
+
+#captureButton:hover {
+    background-color: #c0392b;
+}
+
+.confirmation {
+    display: none;
+}
+
+/* Estilos para o botão de voltar */
+#backButton {
+    background-color: #95a5a6;
+}
+
+#backButton:hover {
+    background-color: #7f8c8d;
+}
+
+/* Estilo geral dos botões */
+button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo específico para o botão de adicionar armadilhas */
+#addTrapCode {
+    background-color: #2ecc71;
+    padding: 5px 10px; /* Menor que os outros botões */
+    font-size: 12px;
+    border-radius: 50%; /* Formato arredondado */
+    width: 30px; /* Largura e altura menores */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o sinal de '+' */
+}
+
+#addTrapCode:hover {
+    background-color: #27ae60;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    /* Ajustes de estilo para telas pequenas */
+    .container {
+        padding: 1rem; /* Reduzir padding */
+    }
+
+    #video {
+        max-width: 100%; /* Removido max-width para evitar cortes */
+    }
+
+    .trap-block input {
+        width: 100%; /* Ajuste para largura total */
+    }
+}
+
+.image-container {
+    text-align: center; /* Centraliza o conteúdo do container */
+    margin-top: 1rem; /* Espaço acima do container */
+}
+
+#capturedImage {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 400px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    border-radius: 8px; /* Cantos arredondados */
+    border: 2px solid #3498db; /* Borda azul */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave */
+}
+
+#capturedImage:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho da imagem */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+}
+
+.image-description {
+    text-align: center; /* Centraliza o texto */
+    color: #34495e; /* Cor do texto */
+    font-size: 0.9rem; /* Tamanho do texto */
+    margin-top: 0.5rem; /* Espaçamento acima do texto */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #capturedImage {
+        max-width: 90%; /* Ajuste a largura máxima em telas pequenas */
+    }
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Estilo dos inputs */
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #34495e;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botões */
+button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo do botão "Voltar" */
+#backButton {
+    background-color: #e74c3c;
+}
+
+#backButton:hover {
+    background-color: #c0392b;
+}
+
+/* Estilo do contêiner de cada bloco de código de armadilha */
+.trap-code-block {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o botão com o input */
+    margin-bottom: 10px; /* Espaçamento entre os blocos */
+}
+
+input.trap-code {
+    flex-grow: 1;
+}
+
+.remove-trap-code {
+    background-color: #e74c3c;
+    color: white;
+    width: 20px;
+    height: 24px;
+    font-size: 12px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px; /* Espaçamento entre o botão e o campo de texto */
+    transition: background-color 0.3s ease;
+    /* Remove o border-radius para manter o formato quadrado */
+}
+
+.remove-trap-code:hover {
+    background-color: #c0392b;
+}
+
+
+

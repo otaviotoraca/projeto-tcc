@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display</title>
+    <link rel="stylesheet" href="image_display.css"> <!-- Link para o arquivo CSS -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Visualizar Imagem</h1>
+        <select id="farmSelect">
+            <option value="" disabled selected>Selecione uma Fazenda</option>
+        </select>
+        <select id="trapSelect">
+            <option value="" disabled selected>Selecione uma Trap</option>
+        </select>
+        <button id="fetchImage">Visualizar Imagem</button>
+
+        <div id="imageContainer" class="image-container" style="display: none;">
+            <img id="capturedImage" src="" alt="Imagem Capturada">
+            <p id="objectCount" class="object-count"></p> <!-- Elemento para exibir a contagem -->
+        </div>
+    </div>
+    <script src="image_display.js"></script>
+</body>
+
+</html>

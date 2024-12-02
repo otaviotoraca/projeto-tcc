@@ -1,0 +1,94 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+/* Estilo dos selects */
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão */
+button {
+    display: inline-block;
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo do container da imagem */
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    /* Bordas arredondadas na imagem */
+}
+
+/* Estilo da contagem de objetos */
+.object-count {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #3498db;
+    /* Cor da contagem de objetos */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 100%;
+        /* Garante que ocupe toda a largura da tela */
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+        /* Tamanho de fonte menor para botões em telas pequenas */
+    }
+
+    select {
+        font-size: 14px;
+        /* Ajuste para texto de selects */
+    }
+}

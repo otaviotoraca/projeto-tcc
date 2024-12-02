@@ -1,0 +1,195 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0; /* Remove padding extra */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    margin: auto; /* Centraliza horizontal e verticalmente */
+}
+
+/* Estilo do vídeo */
+#video {
+    width: 100%;
+    max-width: 100%; /* Para evitar cortes */
+    height: auto;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os selects */
+select, input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select:focus, input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Estilo dos botões */
+button {
+    display: inline-block;
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo da imagem capturada */
+#capturedImage {
+    width: 100%;
+    max-width: 100%; /* Garantir que a imagem não ultrapasse os limites */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #3498db;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#capturedImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para os selects de fazenda e armadilha */
+.farm-select, .trap-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.farm-select:focus, .trap-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 100%; /* Garante que ocupe toda a largura da tela */
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px; /* Tamanho de fonte menor para botões em telas pequenas */
+    }
+
+    select, input {
+        font-size: 14px; /* Ajuste para texto de inputs */
+    }
+}
+
+/* Estilos adicionais para responsividade */
+.image-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-description {
+    text-align: center;
+    font-size: 14px;
+    color: #34495e;
+    margin-top: 5px;
+}
+
+/* Ajustes de margens e tamanhos */
+#goBack {
+    background-color: #95a5a6;
+}
+
+#goBack:hover {
+    background-color: #7f8c8d;
+}
+
+.confirmation {
+    display: none; /* Inicialmente oculto */
+}
+
+/* Estilo para o botão de voltar */
+#goBack {
+    margin-top: 15px; /* Distância do botão de voltar */
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% de margem no topo */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+    text-align: center; /* Centraliza o texto */
+}
+
+.loading-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000; /* Para garantir que fique em cima de outros elementos */
+}
+
+.flash-mode-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #333;
+    cursor: pointer;
+}

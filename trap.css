@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%; /* Para melhor responsividade */
+    max-width: 500px; /* Limita a largura máxima */
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para o botão "Adicionar Código" */
+#addTrapCode {
+    background-color: #28a745; /* Cor do botão "Adicionar Código" (verde mais vibrante) */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* Reduz o padding para deixar o botão menor */
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right; /* Alinha o botão à direita */
+}
+
+#addTrapCode:hover {
+    background-color: #218838; /* Cor ao passar o mouse (verde escuro) */
+}
+
+
+
+/* Estilos para o botão "Salvar" */
+button[type="submit"] {
+    background-color: #3498db; /* Cor do botão "Salvar" */
+    color: white;
+    border: none;
+    padding: 0.75rem 0; /* Ajusta o padding para cima e para baixo */
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Torna o botão com a mesma largura dos inputs */
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9; /* Cor ao passar o mouse */
+}
+
+/* Estilos para o botão "Voltar" */
+#backButton {
+    background-color: #e67e22; /* Cor do botão "Voltar" */
+    color: white;
+    border: none;
+    padding: 0.75rem 0; /* Ajusta o padding para cima e para baixo */
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Torna o botão com a mesma largura dos inputs */
+}
+
+#backButton:hover {
+    background-color: #d35400; /* Cor ao passar o mouse */
+}
+
+/* Estilos para o botão de remover código da armadilha */
+.remove-trap-code {
+    background-color: #e74c3c; /* Cor do botão de remover */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* Reduz o padding para deixar o botão menor */
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 0.5rem; /* Espaço entre o input e o botão */
+    height: 50%; /* Torna o botão com a mesma altura dos inputs */
+}
+
+.remove-trap-code:hover {
+    background-color: #c0392b; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o input de código da armadilha */
+input[type="text"] {
+    width: calc(100% - 84px); /* A largura do input menos a largura do botão de remover */
+    padding: 0.5rem; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 4px; /* Cantos arredondados */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-right: 0.5rem; /* Espaço entre o input e o botão */
+}
+
+
+/* Estilo da mensagem de feedback */
+#message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Inicialmente oculto */
+}
+
+/* Estilo para mensagens de erro */
+.error {
+    background-color: #ffcccc; /* Fundo vermelho claro */
+    color: #c0392b; /* Texto vermelho escuro */
+    border: 1px solid #c0392b; /* Borda vermelha */
+}
+
+/* Estilo para mensagens de sucesso */
+.success {
+    background-color: #eafaf1; /* Fundo verde claro */
+    color: #2c3e50; /* Texto padrão */
+}

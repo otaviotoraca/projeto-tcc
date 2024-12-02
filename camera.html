@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura de Foto</title>
+    <link rel="stylesheet" href="camera.css">
+</head>
+
+<body>
+    <div class="container">
+        <video id="video" autoplay playsinline></video>
+        <button id="capture">Tirar Foto</button>
+
+        <canvas id="canvas" style="display:none;"></canvas>
+        <div id="confirmation" class="confirmation" style="display:none;">
+            <img id="capturedImage" alt="Imagem Capturada">
+            <div class="button-container">
+		
+                <button id="retake">Capturar Novamente</button>
+
+                <select id="farmSelect" class="farm-select">
+                    <option value="" disabled selected>Selecione uma Fazenda</option>
+                    <!-- As opções de fazenda serão carregadas aqui -->
+                </select>
+                <select id="trapSelect" class="trap-select">
+                    <option value="" disabled selected>Selecione uma Armadilha</option>
+                    <!-- As opções das traps serão adicionadas aqui -->
+                </select>
+
+                <button id="send">Enviar Foto</button>
+            </div>
+        </div>
+        <button id="goBack">Voltar</button>
+    </div>
+
+    <div id="alertModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h2>AVISO! IMAGEM JÁ CADASTRADA</h2>
+            <p>DESEJA CADASTRAR MESMO ASSIM?</p>
+            <button id="confirmYes">SIM</button>
+            <button id="confirmNo">NÃO</button>
+        </div>
+    </div>
+
+        <!-- Adicione isso dentro do seu <body> -->
+    <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+        Carregando...
+    </div>
+
+    <script src="camera.js"></script>
+    <script src="loadfarm.js"></script>
+    <script>
+        // Redirecionar para a tela principal
+        document.getElementById('goBack').addEventListener('click', () => {
+            window.location.href = 'index.html'; // Certifique-se de que o arquivo principal seja index.html
+        });
+    </script>
+</body>
+
+</html>

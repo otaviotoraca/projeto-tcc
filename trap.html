@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Armadilhas</title>
+    <!-- Importando o arquivo CSS externo -->
+    <link rel="stylesheet" href="trap.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Armadilhas</h1>
+
+        <form id="trapForm">
+            <label for="farmSelect">Selecione a Fazenda:</label>
+            
+            <div id="message" style="display: none;"></div>
+
+            <select id="farmSelect" required>
+                <option value="">Selecione uma fazenda</option>
+            </select>
+
+            <div id="trapCodesContainer"></div>
+           
+
+
+            <button type="button" id="addTrapCode">+</button>
+            <button type="submit">Salvar</button>
+        </form>
+
+        <button id="backButton">Voltar</button>
+    </div>
+
+    <script src="trap.js"></script>
+</body>
+
+</html>

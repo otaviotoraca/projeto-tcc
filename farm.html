@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fazendas</title>
+    <link rel="stylesheet" href="farm.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Fazendas</h1>
+        <form id="farmForm">
+            <label for="farmName">Nome da Fazenda:</label>
+            <input type="text" id="farmName" name="farmName" required>
+
+            <label for="ownerName">Nome do Proprietário:</label>
+            <input type="text" id="ownerName" name="ownerName" required>
+
+            <button type="submit">Salvar</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="farm.js"></script>
+</body>
+
+</html>
